@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Match</title>
+        <link rel="stylesheet" href="logo.svg">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="logo-v">
+            <img src="logo.svg" alt="logo">
+        </div>
+
+        <div class="wrapper">
+            <form id="formID" method="POST" action="https://daily-match.herokuapp.com/score.php">
+                <div class="wrap visible" id="q1">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"><span id="number"> </span>1 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 1. Who has scored the most goals in Champions League finals?</div>
+                    <div class="pt-4">
+                        
+                            <label class="options">Filippo Inzaghi <input value="one" type="radio" name="ask1"> <span class="checkmark"></span> </label>
+                            <label class="options">Raul <input value="one" type="radio" name="ask1"> <span class="checkmark"></span> </label> 
+                            <label class="options">Gareth Bale <input value="one" type="radio" name="ask1" id="rd" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Cristiano Ronaldo <input value="1two" type="radio" name="ask1"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary NextTo" id="next1">Next <span class="fas fa-arrow-right"></span> </button> 
+                    </div>
+                </div>
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q2">
+                    <div class="text-center pb-4">
+                    <div class="h5 font-weight-bold"> <span id="number"> </span>2 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 2. Who did Ronaldo surpass to become the CL's record goalscorer in 2015?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Raul <input value="2three" type="radio" name="ask2"> <span class="checkmark"></span> </label> 
+                            <label class="options">Andriy Shevchenko <input value="one" type="radio" name="ask2" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Messi <input value="one" type="radio" name="ask2" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Thierry Henry <input value="one" type="radio" name="ask2"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> 
+                    </div>
+                </div>
+                <!-- --------------------------------- -->
+
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q3">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>3 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 3. Which player scored the fastest hat-trick in the Premier League ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Sadio Mane <input value="3three" type="radio" name="ask3"> <span class="checkmark"></span> </label> 
+                            <label class="options">Ryan Giggs <input value="one" type="radio" name="ask3" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Thierry Henry <input value="one" type="radio" name="ask3" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Cristiano Ronaldo <input value="one" type="radio" name="ask3"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q4">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>4 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 4. The record number of World Cup goals is 16, scored by who ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Gerd Muller <input value="one" type="radio" name="ask4"> <span class="checkmark"></span> </label> 
+                            <label class="options">Miroslav Klose <input value="4three" type="radio" name="ask4" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Ronaldo <input value="one" type="radio" name="ask4" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Harry Kane <input value="one" type="radio" name="ask4"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q5">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>5 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 5. What team won Champions League 2006/2007 ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Manchester United <input value="one" type="radio" name="ask5"> <span class="checkmark"></span> </label> 
+                            <label class="options">Bayern München <input value="one" type="radio" name="ask5" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Arsenal <input value="one" type="radio" name="ask5" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Milan <input value="5one" type="radio" name="ask5"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q6">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>6 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 6. Which player was involved in the highest transfer in 2017 ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Álvaro Morata <input value="one" type="radio" name="ask6"> <span class="checkmark"></span> </label> 
+                            <label class="options">Ousmane Dembélé <input value="6two" type="radio" name="ask6" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Romelu Lukaku <input value="one" type="radio" name="ask6" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Kyle Walker <input value="one" type="radio" name="ask6"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q7">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>7 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 7. Only two players have ever scored 5 goals in a CL game: Messi and who?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Robert Lewandowski <input value="one" type="radio" name="ask7"> <span class="checkmark"></span> </label> 
+                            <label class="options">Luiz Adriano <input value="7three" type="radio" name="ask7" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Marco van Basten <input value="one" type="radio" name="ask7" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Ruud van Nistelrooy <input value="one" type="radio" name="ask7"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q8">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>8 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 8. How many World Cup participations has Gianluigi Buffon ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">3 <input value="one" type="radio" name="ask8"> <span class="checkmark"></span> </label> 
+                            <label class="options">5 <input value="8two" type="radio" name="ask8" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">4 <input value="one" type="radio" name="ask8" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">2 <input value="one" type="radio" name="ask8"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q9">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>9 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 9. Portugal win the European Championship in which year ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">2012 <input value="one" type="radio" name="ask9"> <span class="checkmark"></span> </label> 
+                            <label class="options">2008 <input value="one" type="radio" name="ask9" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">2016 <input value="9one" type="radio" name="ask9" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">2018 <input value="one" type="radio" name="ask9"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q10">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>10 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 10. who holds the record for top Bundesliga goalscorer of all time ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Robert Lewandowski <input value="one" type="radio" name="ask10"> <span class="checkmark"></span> </label> 
+                            <label class="options">Gerd Muller <input value="10one" type="radio" name="ask10" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Mario Gómez <input value="one" type="radio" name="ask10" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Karl-Heinz Rummenigge <input value="one" type="radio" name="ask10"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q11">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>11 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 11. Who scored the fastest goal in Champions League history ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Roy Makaay <input value="11two" type="radio" name="ask11"> <span class="checkmark"></span> </label> 
+                            <label class="options">Dejan Stanković <input value="one" type="radio" name="ask11" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Paolo Maldini <input value="one" type="radio" name="ask11" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Alexandre Pato <input value="one" type="radio" name="ask11"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q12">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>12 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 12. Who is the only defender to score a Champions League hat-trick ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Roberto Carlos <input value="one" type="radio" name="ask12"> <span class="checkmark"></span> </label> 
+                            <label class="options">Layvin Kurzawa <input value="12one" type="radio" name="ask12" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Fernando Hierro <input value="one" type="radio" name="ask12" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Éric Di Meco <input value="one" type="radio" name="ask12"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q13">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>13 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 13. Which stadium hosted Man Utd's iconic 1999 final win vs Bayern ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Santiago Bernabeu <input value="one" type="radio" name="ask13"> <span class="checkmark"></span> </label> 
+                            <label class="options">Luzhniki Stadium <input value="one" type="radio" name="ask13" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Mestalla Stadium <input value="one" type="radio" name="ask13" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Camp Nou <input value="13two" type="radio" name="ask13"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q14">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>14 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 14. Who scored the first goal in Barcelona 2-8 Bayern Munich ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Ivan Perisic <input value="one" type="radio" name="ask14"> <span class="checkmark"></span> </label> 
+                            <label class="options">David Alaba (OG) <input value="one" type="radio" name="ask14" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Thomas Muller <input value="14three" type="radio" name="ask14" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Joshua Kimmich <input value="one" type="radio" name="ask14"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q15">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>15 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 15. Which of the following clubs did Luís Figo never play for ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Inter Milan <input value="one" type="radio" name="ask15"> <span class="checkmark"></span> </label> 
+                            <label class="options">Real Madrid <input value="one" type="radio" name="ask15" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Barcelona <input value="one" type="radio" name="ask15" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Napoli <input value="15two" type="radio" name="ask15"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q16">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>16 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 16. Who conceded Man Utd's iconic winning penalty at PSG in 2019 ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Presnel Kimpembe <input value="16two" type="radio" name="ask16"> <span class="checkmark"></span> </label> 
+                            <label class="options">Thilo Kehrer <input value="one" type="radio" name="ask16" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Thiago Silva <input value="one" type="radio" name="ask16" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Juan Bernat <input value="one" type="radio" name="ask16"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q17">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>17 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 17. What is the nationality of 'Mesut Özil' ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Portuguese <input value="one" type="radio" name="ask17"> <span class="checkmark"></span> </label> 
+                            <label class="options">English  <input value="one" type="radio" name="ask17" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">German <input value="17two" type="radio" name="ask17" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Egyptian <input value="one" type="radio" name="ask17"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q18">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>18 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 18. How many goals did Cristiano Ronaldo for Real Madrid in La Liga ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">311 <input value="18three" type="radio" name="ask18"> <span class="checkmark"></span> </label> 
+                            <label class="options">320 <input value="one" type="radio" name="ask18" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">211 <input value="one" type="radio" name="ask18" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">411 <input value="one" type="radio" name="ask18"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- --------------------------------- -->
+                <div class="wrap" id="q19">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>19 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 19. Who was the top goalscorer in Premier League season 06-07 ?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">Cristiano Ronaldo <input value="one" type="radio" name="ask19"> <span class="checkmark"></span> </label> 
+                            <label class="options">Darren Bent <input value="one" type="radio" name="ask19" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Dimitar Berbatov <input value="one" type="radio" name="ask19" id="rd"> <span class="checkmark"></span> </label> 
+                            <label class="options">Didier Drogba <input value="19three" type="radio" name="ask19"> <span class="checkmark"></span> </label> 
+                        <!-- CC -->
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary NextTo" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+                </div>
+                <!-- --------------------------------- -->
+                <!-- ---------------- LAST ----------------- -->
+                <div class="wrap" id="q20">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>20 of 20 </div>
+                    </div>
+                    <div class="h4 head1"> 20. Who scored Liverpool's second goal in the Istanbul comeback?</div>
+                    <div class="pt-4">
+                        <!-- AA --> 
+                            <label class="options">John Arne Riise <input value="one" type="radio" name="ask20"> <span class="checkmark"></span> </label> 
+                            <label class="options">Dietmar Hamann <input value="one" type="radio" name="ask20"> <span class="checkmark"></span> </label> 
+                            <label class="options">Xabi Alonso <input value="one" type="radio" name="ask20" id="rd" checked> <span class="checkmark"></span> </label> 
+                            <label class="options">Vladimír Šmicer <input value="20three" type="radio" name="ask20"> <span class="checkmark"></span> </label> 
+                        
+                    </div>
+                    <div class="pt-2 btn-box"> 
+                        <button type="button" class="btn btn-primary mx-3 PervTo" id="back2"> <span class="fas fa-arrow-left pr-2"></span>Previous </button> 
+                        <button type="button" class="btn btn-primary" id="next3">Submit </button> 
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <div class="popup-box">
+            <div class="popup-content">
+                <div class="cancle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                </div>
+
+                <iframe id="iframe1" scrolling="no" src="https://mobile-home-xc1.herokuapp.com/main.php" title="W3Schools Free Online Web Tutorials">
+                </iframe>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
